@@ -49,7 +49,7 @@ public class TV{
     public Control getControl(){
         return control;
     }
-                                    //método de clase para modificar el valor de televisores creados
+                                    //metodo de clase para modificar el valor de televisores creados
     public static void tvCreados(){
         numTV = ++numTV;
     }
