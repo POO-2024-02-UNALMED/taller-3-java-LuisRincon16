@@ -38,7 +38,7 @@ public class TV{
     }
     public int getCanal(){
         
-        return canal;
+        return this.canal;
     }
 
     public void setPrecio(int prec){
