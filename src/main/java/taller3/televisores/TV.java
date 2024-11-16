@@ -80,20 +80,22 @@ public class TV{
                                      //Aumentar y disminuir canales
     public void canalUp(){
         getEstado();
+        getCanal();
         if (estado = true){
             if (this.canal >= 1 && this.canal <= 120){
-                this.canal += 1;
-                this.setCanal(this.canal);
+                int cana = this.canal + 1;
+                this.setCanal(cana);
             }
         }
     }
 
     public void canalDown(){
         getEstado();
+        getCanal();
         if (estado = true){
             if (this.canal >= 1 && this.canal <= 120){
-                this.canal -= 1;
-                this.setCanal(this.canal);  
+                int cana = this.canal - 1;
+                this.setCanal(cana);
             }
         }
     }
