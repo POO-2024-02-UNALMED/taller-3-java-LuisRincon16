@@ -83,6 +83,7 @@ public class TV{
         if (estado = true){
             if (this.canal >= 1 && this.canal <= 120){
                 this.canal += 1;
+                this.setCanal(this.canal);
             }
         }
     }
@@ -91,7 +92,8 @@ public class TV{
         getEstado();
         if (estado = true){
             if (this.canal >= 1 && this.canal <= 120){
-                this.canal -= 1;   
+                this.canal -= 1;
+                this.setCanal(this.canal);  
             }
         }
     }
