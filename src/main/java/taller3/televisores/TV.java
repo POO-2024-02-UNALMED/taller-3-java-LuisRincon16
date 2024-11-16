@@ -31,8 +31,7 @@ public class TV{
     }
 
     public void setCanal(int can){
-        getEstado();
-        if (estado = true){
+        if (this.estado = true && this.canal >= 1 && this.canal <= 120){
             this.canal = can;
         }
     }
@@ -48,8 +47,7 @@ public class TV{
     }
 
     public void setVolumen(int vol){
-        getEstado();
-        if (estado = true){
+        if (this.estado = true && this.volumen >= 0 && this.volumen <= 7){
             this.volumen = vol;
         }
     }
@@ -79,47 +77,23 @@ public class TV{
     }
                                      //Aumentar y disminuir canales
     public void canalUp(){
-        getEstado();
-        getCanal();
-        if (estado = true){
-            if (this.canal >= 1 && this.canal <= 120){
-                int cana = this.canal + 1;
-                this.setCanal(cana);
-            }
-        }
+        int cana = this.canal + 1;
+        this.setCanal(cana);
     }
 
     public void canalDown(){
-        getEstado();
-        getCanal();
-        if (estado = true){
-            if (this.canal >= 1 && this.canal <= 120){
-                int canai = this.canal - 1;
-                this.setCanal(canai);
-            }
-        }
+        int cana = this.canal - 1;
+        this.setCanal(cana);
     }
                                         //Aumentar y disminuir volumen
     public void volumenUp(){
-        getEstado();
-        getVolumen();
-        if (estado = true){
-            if(this.volumen >= 0 && this.volumen <= 7){
-                int voln = this.volumen + 1;
-                this.setVolumen(voln);
-            }
-        }
+        int vol = this.volumen + 1;
+        this.setVolumen(vol);
     }
 
     public void volumenDown(){
-        getEstado();
-        getVolumen();
-        if (estado = true){
-            if (this.volumen >= 0 && this.volumen <= 7){
-                int volm = this.volumen - 1;
-                this.setVolumen(volm);
-            }
-        }
+        int vol = this.volumen - 1;
+        this.setVolumen(vol);
     }
 
 
