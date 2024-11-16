@@ -69,14 +69,10 @@ public class TV{
     }
                                     //Enceder y apagar tv
     public void turnOff(){
-        if (estado = true) {
-            this.estado = false;
-        }
+        this.estado = false;
     }
     public void turnOn(){
-        if (estado = false){
-            this.estado = true;
-        }
+        this.estado = true;
     }                                   //Conocer el estado del tv
     public boolean getEstado(){
         return estado;
