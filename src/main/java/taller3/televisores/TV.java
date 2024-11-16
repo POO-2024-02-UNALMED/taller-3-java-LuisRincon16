@@ -37,6 +37,7 @@ public class TV{
         }
     }
     public int getCanal(){
+        
         return canal;
     }
 
@@ -70,12 +71,12 @@ public class TV{
                                     //Enceder y apagar tv
     public void turnOff(){
         if (estado = true) {
-            estado = false;
+            this.estado = false;
         }
     }
     public void turnOn(){
         if (estado = false){
-            estado = true;
+            this.estado = true;
         }
     }                                   //Conocer el estado del tv
     public boolean getEstado(){
@@ -85,8 +86,8 @@ public class TV{
     public void canalUp(){
         getEstado();
         if (estado = true){
-            if (canal >= 1 && canal <= 120){
-                canal = ++canal;
+            if (this.canal >= 1 && this.canal <= 120){
+                this.canal += 1;
             }
         }
     }
@@ -94,8 +95,8 @@ public class TV{
     public void canalDown(){
         getEstado();
         if (estado = true){
-            if (canal >= 1 && canal <= 120){
-                canal = --canal;
+            if (this.canal >= 1 && this.canal <= 120){
+                this.canal -= 1;
             }
         }
     }
