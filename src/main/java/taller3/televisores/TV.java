@@ -77,22 +77,22 @@ public class TV{
     }
                                      //Aumentar y disminuir canales
     public void canalUp(){
-        int cana = ++this.canal;
+        int cana = this.canal + 1;
         this.setCanal(cana);
     }
 
     public void canalDown(){
-        int cana = --this.canal;
+        int cana = this.canal - 1;
         this.setCanal(cana);
     }
                                         //Aumentar y disminuir volumen
     public void volumenUp(){
-        int vol = ++this.volumen;
+        int vol = this.volumen + 1;
         this.setVolumen(vol);
     }
 
     public void volumenDown(){
-        int vol = --this.volumen;
+        int vol = this.volumen - 1;
         this.setVolumen(vol);
     }
 
