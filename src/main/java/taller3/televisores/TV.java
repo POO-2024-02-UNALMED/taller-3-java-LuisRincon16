@@ -94,26 +94,30 @@ public class TV{
         getCanal();
         if (estado = true){
             if (this.canal >= 1 && this.canal <= 120){
-                int cana = this.canal - 1;
-                this.setCanal(cana);
+                int canai = this.canal - 1;
+                this.setCanal(canai);
             }
         }
     }
                                         //Aumentar y disminuir volumen
     public void volumenUp(){
         getEstado();
+        getVolumen();
         if (estado = true){
-            if(volumen >= 0 && volumen <= 7){
-                volumen = ++volumen;
+            if(this.volumen >= 0 && this.volumen <= 7){
+                int voln = this.volumen + 1;
+                this.setVolumen(voln);
             }
         }
     }
 
     public void volumenDown(){
         getEstado();
+        getVolumen();
         if (estado = true){
-            if (volumen >= 0 && volumen <= 7){
-                volumen = --volumen;
+            if (this.volumen >= 0 && this.volumen <= 7){
+                int volm = this.volumen - 1;
+                this.setVolumen(volm);
             }
         }
     }
