@@ -97,6 +97,7 @@ public class TV{
         if (estado = true){
             if (this.canal >= 1 && this.canal <= 120){
                 this.canal -= 1;
+                
             }
         }
     }
