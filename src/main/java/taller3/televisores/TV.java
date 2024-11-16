@@ -31,7 +31,10 @@ public class TV{
     }
 
     public void setCanal(int can){
-        this.canal = can;
+        getEstado();
+        if (estado = true){
+            this.canal = can;
+        }
     }
     public int getCanal(){
         return canal;
@@ -45,7 +48,10 @@ public class TV{
     }
 
     public void setVolumen(int vol){
-        this.volumen = vol;
+        getEstado();
+        if (estado = true){
+            this.volumen = vol;
+        }
     }
     public int getVolumen(){
         return volumen;
