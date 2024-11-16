@@ -36,8 +36,7 @@ public class TV{
             this.canal = can;
         }
     }
-    public int getCanal(int canalN){
-        this.canal = canalN;
+    public int getCanal(){
         return this.canal;
     }
 
@@ -96,8 +95,7 @@ public class TV{
         getEstado();
         if (estado = true){
             if (this.canal >= 1 && this.canal <= 120){
-                this.canal -= 1;
-                
+                this.canal -= 1;   
             }
         }
     }
