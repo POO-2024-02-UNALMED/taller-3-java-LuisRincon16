@@ -31,7 +31,7 @@ public class Control{
     public void volumenDown(){
         tv.volumenDown();
     }
-                                        //Cmbiar canal y volumen personalmente
+                                        //Cambiar canal y volumen personalmente
     public void setCanal(int canal){
         tv.setCanal(canal);
     }
